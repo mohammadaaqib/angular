@@ -1,0 +1,31 @@
+
+FIREBASE:
+*npm i g firebase-tools
+*firebase login --interactive
+*firebase init(select hosting,select project)*create firebse.json and 1 more file* 
+*firebase json 
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
+replace with 
+{
+  "hosting": {
+    "public": "dist"
+  }
+}
+* ng build --prod
+*firebase deploy (hosting url and enjoy )
+==========END FIREBASE==============
