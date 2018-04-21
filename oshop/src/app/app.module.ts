@@ -1,3 +1,4 @@
+import { UserService } from './user.service';
 import { AuthGuardService } from './auth-guard.service';
 import { AuthService } from './auth.service';
 import { environment } from './../environments/environment';
@@ -59,7 +60,7 @@ import { Component } from '@angular/core/src/metadata/directives';
     ])
 
   ],
-  providers: [AuthService,AuthGuardService],
+  providers: [AuthService,AuthGuardService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
