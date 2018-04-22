@@ -1,3 +1,17 @@
+* Declear variable using let because var is accesse ble to the nearest method which mean the upper function
+* let a:number;
+* let a:number[]=[1,2,3];
+* enum color{red,gree,blue} 
+  let backColor=color.red;
+*/type assersion/
+{
+  let name;
+  name='aqib';
+  let e=(<string>name).endsWith('b'); >
+  let f=(message as string).endsWith('b')
+}
+
+
 
 FIREBASE:
 *npm i g firebase-tools
